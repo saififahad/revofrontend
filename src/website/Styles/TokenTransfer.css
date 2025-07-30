@@ -1,0 +1,309 @@
+/* TokenTransfer.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 20px;
+}
+
+.loader {
+  margin: 20px auto;
+  width: 70px;
+  height: 20px;
+  text-align: center;
+}
+
+.loader > div {
+  width: 18px;
+  height: 18px;
+  background-color: #3498db;
+  border-radius: 100%;
+  display: inline-block;
+  animation: loader 1.4s infinite ease-in-out both;
+}
+
+.loader .dot1 {
+  animation-delay: -0.32s;
+}
+
+.loader .dot2 {
+  animation-delay: -0.16s;
+}
+
+@keyframes loader {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/* wallet-part css */
+
+.my-wallet {
+  padding: 12px 100px;
+  /* display: flex;
+  justify-content: space-between; */
+  margin-top: 10px;
+}
+.current-bal {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding: 12px 12px;
+  justify-content: space-between;
+  animation: detail 0.6s ease-in-out forwards;
+}
+.account-details-part {
+  margin-top: 22px;
+  font-size: 1.2rem;
+  animation: detail 0.6s ease-in-out forwards;
+  color: #fff;
+}
+.acc-det {
+  animation: detail 1s ease-in-out forwards;
+}
+
+@keyframes detail {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.current-bal-child {
+  display: flex;
+  align-items: center;
+  margin-inline-end: 30px;
+}
+.current-bal h1 {
+  font-size: 1.5rem;
+  /* margin-inline-start: 20px; */
+  color: #fff;
+}
+.current-bal .points {
+  border-bottom: 1px solid white;
+  margin-inline-start: 20px;
+  font-size: 1.4rem;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(89.2deg, #8fd6ff 0%, #8a80fa 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.meta-part {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 20px 20px;
+  margin-top: 40px;
+}
+.wall-btn {
+  margin: 12px 80px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--btn-color);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: detail 0.8s ease-in-out forwards;
+}
+
+/* .wall-btn:hover {
+  background-color: #fff;
+  color: #4294ce;
+} */
+.token-select {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  margin-right: 8px;
+  background-color: #2c3e50;
+  color: white;
+  animation: detail 0.8s ease-in-out forwards;
+}
+
+/* responsive pattern */
+@media (max-width: 1250px) {
+  .current-bal {
+    width: 100%;
+    padding: 12px 5px;
+  }
+  .account-details-part {
+    font-size: 1rem;
+    margin-inline-start: 30px;
+  }
+  .current-bal-child h1 {
+    font-size: 1.2rem;
+  }
+  .current-bal .points {
+    font-size: 1.1rem;
+    margin-inline-start: 8px;
+  }
+}
+@media (max-width: 1100px) {
+  .my-wallet {
+    padding: 12px 10px;
+  }
+  .current-bal-child h1 {
+    font-size: 1.2rem;
+  }
+  .current-bal .points {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 900px) {
+  .my-wallet {
+    padding: 12px 5px;
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .my-wallet {
+    padding: 12px 5px;
+    width: 100%;
+  }
+  .current-bal {
+    flex-direction: column;
+    align-items: center;
+  }
+  .account-details-part {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    text-align: center;
+    margin-inline-start: 0;
+  }
+  .current-bal-child h1 {
+    font-size: 1.2rem;
+  }
+  .current-bal .points {
+    font-size: 1.1rem;
+  }
+  .meta-part {
+    justify-content: center;
+  }
+  .wall-btn {
+    margin: 12px 30px;
+  }
+}
+
+@media (max-width: 530px) {
+  .meta-part {
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 10px;
+    margin: 10px auto;
+  }
+  .wall-btn {
+    width: 90%;
+    margin: 10px 0px;
+  }
+}
+@media (max-width: 450px) {
+  .my-wallet {
+    padding: 12px 5px;
+    width: 100%;
+  }
+  .current-bal {
+    flex-direction: column;
+    align-items: center;
+  }
+  .account-details-part {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  .current-bal-child h1 {
+    font-size: 1.2rem;
+  }
+  .current-bal .points {
+    font-size: 1.1rem;
+  }
+  .meta-part {
+    justify-content: center;
+  }
+  .wall-btn {
+    margin: 12px 15px;
+    padding: 15px;
+  }
+}
+@media (max-width: 390px) {
+  .my-wallet {
+    padding: 12px 5px;
+    width: 100%;
+  }
+  .current-bal {
+    flex-direction: column;
+    align-items: center;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+  .account-details-part {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  .current-bal-child h1 {
+    font-size: 1rem;
+  }
+  .current-bal .points {
+    font-size: 1.1rem;
+  }
+  .meta-part {
+    justify-content: center;
+  }
+  .wall-btn {
+    margin: 12px 5px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 330px) {
+  .current-bal-child h1 {
+    font-size: 0.8rem;
+  }
+  .current-bal .points {
+    font-size: 0.9rem;
+  }
+
+  .meta-part {
+    flex-direction: column;
+  }
+  .wall-btn {
+    width: 90%;
+    margin: 12px 10px;
+    padding: 12px 30px;
+  }
+  .token-select {
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+}

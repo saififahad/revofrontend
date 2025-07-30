@@ -1,0 +1,96 @@
+.user-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.level-section {
+  margin-bottom: 20px;
+  overflow-x: scroll;
+}
+
+.level-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  color: #fff;
+}
+.user-table tr th {
+  color: #fff;
+  background: var(--btn-color);
+}
+.pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pagination-controls button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+  color: Red;
+}
+
+.pagination-controls button:disabled {
+  cursor: not-allowed;
+}
+
+.current-page {
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .user-table th,
+  .user-table td {
+    padding: 4px;
+    font-size: 12px;
+  }
+
+  .pagination-controls button {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+.level-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.level-header h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #fff;
+}
+
+.level-header > div {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.level-header > div > div {
+  margin-left: 10px;
+}

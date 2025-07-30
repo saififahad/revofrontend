@@ -1,0 +1,73 @@
+.wallet-container {
+  background: var(--nav-color);
+}
+
+.wallet-part {
+  padding: 30px 100px;
+  width: 100%;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid rgba(173, 173, 173, 1);
+  margin-inline-start: 60px;
+}
+
+.tabs .wallet-btn {
+  padding: 0 12px;
+  margin: 10px 25px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.tabs .wallet-btn:hover {
+  background: linear-gradient(89.2deg, #8fd6ff 0%, #8a80fa 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+/* Added transition for .tabs .wallet-btn::after */
+.tabs .wallet-btn::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(89.2deg, #8fd6ff 0%, #8a80fa 100%);
+  transition: width 0.3s ease-in-out; /* Added width transition */
+  width: 0%;
+}
+
+.tabs .wallet-btn.active::after {
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .wallet-part {
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 700px) {
+  .wallet-part {
+    padding: 20px 20px;
+    width: 100%;
+  }
+  .tabs {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+@media (max-width: 500px) {
+  .tabs .wallet-btn {
+    padding: 0 10px;
+    font-size: 0.8rem;
+  }
+  .wallet-part {
+    padding: 5px 5px;
+  }
+}

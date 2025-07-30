@@ -1,0 +1,152 @@
+.Block-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+.block-box {
+  background: url("../../assets/website/Img/block/Cloudeffect .png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+  height: 300px;
+border: 3px solid;
+  border-image-source: linear-gradient(89.2deg, #8fd6ff 0%, #8a80fa 100%);
+  border-image-slice: 1;
+}
+.block-box h1 {
+  padding: 20px 20px;
+  font-size: 3rem;
+  font-family: Inter;
+  /* font-size: 48px; */
+  font-weight: 700;
+  line-height: 58.09px;
+  text-align: left;
+}
+.block-btn {
+  padding: 15px 30px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+@media (max-width:1450px){
+ .block-box{
+  width: 80%;
+ }
+
+}
+@media (max-width:1150px){
+ .block-box{
+  width: 100%;
+ }
+
+}
+@media (max-width:860px){
+  .block-box{
+  height: 180px;
+
+  }
+ .block-box h1 {
+  font-size: 2.5rem;
+}
+.block-btn {
+  padding: 13px 25px;
+  font-size: 1rem;
+}
+.block-box img{
+  width: 20%;
+}
+ 
+
+}
+@media (max-width:700px){
+  .block-box{
+  height: 160px;
+
+  }
+ .block-box h1 {
+  font-size: 2.2rem;
+}
+.block-btn {
+  padding: 13px 20px;
+  font-size: 1rem;
+}
+
+ 
+
+}
+@media (max-width:600px){
+  .block-box{
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+
+  }
+   .block-box h1 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+.block-btn {
+  padding: 15px 30px;
+  font-size: 1rem;
+}
+.block-box img{
+  width: 70%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  place-items: center;
+  margin-inline-start: 30px;
+}
+
+
+ 
+
+}
+@media (max-width:400px){
+
+   .block-box h1 {
+  font-size: 2rem;
+  line-height: 40px;
+}
+.block-btn {
+  padding: 15px 20px;
+  font-size: 1rem;
+}
+.block-box img{
+  width: 70%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-inline-start: 15px;
+}
+
+
+ 
+
+}
+@media (max-width:350px){
+
+
+   .block-box h1 {
+  font-size: 1.5rem;
+  line-height: 30px;
+}
+.block-btn {
+  padding: 10px 20px;
+  font-size: 0.8rem;
+}
+.Block-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+}
+
+
+
+ 
+
+}

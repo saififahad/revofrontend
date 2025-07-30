@@ -1,0 +1,168 @@
+.Home-layout {
+  background: var(--nav-color);
+}
+/* Container for the instructions */
+.instructions-container {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 1220px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+/* Ordered list styling */
+.instructions-list {
+  padding-left: 20px;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.instructions-item {
+  margin-bottom: 16px;
+}
+
+/* Sublist Styling */
+.sublist {
+  list-style-type: circle;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.sublist-item {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+/* Typography Styles */
+.item-title {
+  font-weight: bold;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+/* Container for the tips section */
+.tips-container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+/* Title styling */
+.tips-title {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+/* List styling */
+.tips-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.tips-item {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+/* Highlight the key text */
+.item-highlight {
+  font-weight: bold;
+}
+
+/* Container for the disclaimers section */
+.disclaimer-container {
+  max-width: 1220px;
+  margin: 0 auto;
+  margin-top: 30px;
+  /* padding: 20px; */
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.disclaimer-title {
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* List styling */
+.disclaimer-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.disclaimer-item {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+/* Highlight the key text */
+.item-highlight {
+  font-weight: bold;
+}
+
+.out-gas-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.out-gas-heading {
+  margin-bottom: 30px;
+}
+
+.out-gas-para,
+.out-gas-par {
+  font-size: 17px;
+}
+
+.out-gas-list {
+  font-size: 17px;
+}
+
+@media (max-width: 500px) {
+  .instructions-container,
+  .out-gas-container,
+  .tips-container {
+    width: 90%;
+  }
+  .out-gas-heading {
+    margin-bottom: 30px;
+  }
+
+  .out-gas-para,
+  .out-gas-par {
+    font-size: 16px;
+  }
+
+  .out-gas-list,
+  .disclaimer-item,
+  .sublist-item,
+  .tips-item {
+    font-size: 16px;
+  }
+  .disclaimer-title,
+  .out-gas-heading {
+    font-size: 28px;
+  }
+}

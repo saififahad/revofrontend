@@ -1,0 +1,25 @@
+.beep-timer-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2002;
+}
+.beep_timer {
+  font-size: 10rem;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  display: flex;
+  gap: 1rem;
+}
+.beep_timer span {
+  background-color: rgba(64, 64, 255, 0.834);
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+}

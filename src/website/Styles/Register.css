@@ -1,0 +1,371 @@
+.Register-container {
+  padding: 50px 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.register-child {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 70%;
+  border: 1px solid rgba(109, 109, 109, 1);
+  border-radius: 12px;
+  padding: 12px 12px;
+  background: url("../../assets/website/Img/Login/login.png");
+  animation: pop 0.6s ease-in-out;
+}
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinner {
+  -moz-appearance: textfield;
+}
+.register-cross-part {
+  padding: 12px 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.register-cross-part img {
+  cursor: pointer;
+  height: 40px;
+}
+
+.register-content {
+  margin-top: 30px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 30px;
+}
+
+.register-form-part {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 12px;
+}
+
+.register-form-part h3 {
+  padding: 8px 12px;
+  font-size: 2rem;
+  background: linear-gradient(89.2deg, #8fd6ff 0%, #8a80fa 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.register-form-part h1 {
+  padding: 8px 12px;
+  font-size: 3rem;
+  margin-top: 2px;
+}
+
+.register-form-fields {
+  margin-top: 20px;
+  padding: 10px 30px;
+  width: 70%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.register-form-group {
+  padding: 10px 20px;
+}
+
+.register-form-group.otp-group {
+  display: none;
+}
+
+.register-form-control {
+  padding: 18px 15px;
+  border: none;
+  /* background: rgba(255, 255, 255, 0.15); */
+  background: transparent;
+  border: 2px solid #fff;
+  width: 100%;
+  color: #fff;
+  outline: none;
+}
+
+.register-form-control::placeholder {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.register-button {
+  display: flex;
+  justify-content: center;
+}
+
+.register-btn {
+  margin-top: 30px;
+  padding: 30px 45px;
+  border-radius: 40px;
+  background: linear-gradient(180deg, #f9537f 0%, #d644a5 100%);
+  /* background: #fff; */
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+.login {
+  display: flex;
+  justify-content: end;
+  padding-top: 12px;
+  cursor: pointer;
+}
+.already-have-account > span:hover {
+  color: #9c969a;
+}
+.otp-field {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.send-otp-btn {
+  /* margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  white-space: nowrap; */
+  display: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 5px;
+  text-align: left;
+  /* display: none; */
+}
+
+.registerDone-content {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+}
+.already-have-account {
+  margin-inline-start: 20px;
+}
+.already-have-account a {
+  margin-inline-start: 10px;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+@media (max-width: 1500px) {
+  .register-form-part {
+    width: 100%;
+  }
+  .register-form-fields {
+    margin-top: 5px;
+    width: 90%;
+  }
+
+  .register-form-part h3 {
+    font-size: 1.8rem;
+  }
+
+  .register-form-part h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1100px) {
+  .register-form-fields {
+    margin-top: 5px;
+    width: 100%;
+  }
+  .register-cross-part img {
+    height: 35px;
+  }
+  .register-content {
+    margin-top: 5px;
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 900px) {
+  .register-form-fields {
+    margin-top: 5px;
+    width: 100%;
+  }
+  .register-cross-part img {
+    height: 35px;
+  }
+  .register-content {
+    margin-top: 5px;
+    padding: 10px 10px;
+  }
+  .register-form-part h1 {
+    text-align: center;
+    font-size: 1.8;
+  }
+  .register-child {
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .register-form-fields {
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px 10px;
+  }
+  .register-cross-part img {
+    height: 30px;
+  }
+  .register-content {
+    margin-top: 5px;
+    padding: 5px 5px;
+  }
+  .register-form-group {
+    padding: 5px 5px;
+  }
+  .Register-container {
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 450px) {
+  .register-form-fields {
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .register-cross-part img {
+    height: 30px;
+  }
+  .register-content {
+    padding: 5px 5px;
+  }
+  .register-form-group {
+    padding: 5px 5px;
+  }
+  .Register-container {
+    padding: 5px 5px;
+  }
+  .register-form-part {
+    padding: 2px 2px;
+  }
+}
+@media (max-width: 350px) {
+  .register-child {
+    padding: 4px 2px;
+  }
+  .register-form-fields {
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .register-cross-part img {
+    height: 30px;
+  }
+  .register-content {
+    padding: 5px 5px;
+  }
+  .register-form-group {
+    padding: 5px 5px;
+  }
+  .Register-container {
+    padding: 5px 5px;
+  }
+  .register-form-part {
+    padding: 2px 2px;
+  }
+  .register-form-part h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .register-form-part h1 {
+    font-size: 1.3rem;
+  }
+  .send-otp-btn {
+    margin-top: 5px;
+    padding: 2px;
+  }
+}
+
+.checkbox-group {
+  margin: 20px 0;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  padding-left: 30px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.4;
+}
+
+/* Hide native checkbox */
+.styled-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Custom checkbox box */
+.custom-checkmark {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  height: 18px;
+  width: 18px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 3px;
+}
+
+/* Checked style */
+.styled-checkbox:checked ~ .custom-checkmark {
+  background-color: #e91e63; /* Pink checkmark background */
+  border: 2px solid #e91e63;
+}
+
+.custom-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show checkmark when checked */
+.styled-checkbox:checked ~ .custom-checkmark:after {
+  display: block;
+}
+
+.custom-checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Error message for checkbox */
+.error-message {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: 5px;
+  padding-left: 0px;
+}

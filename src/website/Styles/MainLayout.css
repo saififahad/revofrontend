@@ -1,0 +1,19 @@
+.header-layout {
+  background-color: var(--nav-color);
+}
+::-webkit-scrollbar {
+  width: 4px;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar-track {
+  background: var(--nav-color);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--btn-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  width: 8px;
+  background-color: var(--btn-color);
+  cursor: grabbing;
+}

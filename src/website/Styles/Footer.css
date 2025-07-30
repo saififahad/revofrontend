@@ -1,0 +1,238 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(25, 42, 54, 1);
+}
+
+.footer-part {
+  width: 80%;
+  display: flex;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-part h5 {
+  color: rgba(173, 173, 173, 1);
+  font-size: 1rem;
+}
+.contact-part h1 {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.second-part h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.second-part h5 {
+  color: rgba(173, 173, 173, 1);
+  font-size: 1rem;
+}
+
+.email-subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px; /* Add some space above the form */
+}
+
+.email-input {
+  padding: 10px;
+  border: 1px solid #ccc; /* Add border for visibility */
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  width: 200px;
+  font-size: 1rem; /* Match input font size */
+}
+
+.send-button {
+  padding: 10px;
+  border: 1px solid #ccc; /* Match border with input */
+  border-left: none; /* Remove the left border to connect with input */
+  border-radius: 0 4px 4px 0;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #777;
+}
+
+.send-button svg {
+  vertical-align: middle;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.last-part {
+  padding: 5px 5px;
+  background-color: rgba(25, 42, 54, 1);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.last-part h5 {
+  font-size: 1rem;
+  color: rgba(173, 173, 173, 1);
+}
+
+@media (max-width: 1300px) {
+  .footer-part {
+    width: 90%;
+  }
+}
+@media (max-width: 1100px) {
+  .footer-part {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .second-part {
+    margin: 0px 10px;
+  }
+  .contact-part {
+    margin: 0px 10px;
+  }
+  .email-subscribe {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 520px) {
+  .footer-part {
+    justify-content: center;
+  }
+  .second-part {
+    text-align: center;
+    margin: 20px 20px;
+  }
+  .contact-part {
+    margin: 0px 10px;
+  }
+  .email-subscribe {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .footer-part {
+    justify-content: center;
+  }
+  .second-part {
+    text-align: center;
+    margin: 20px 20px;
+    padding-inline-start: 10px 10px;
+  }
+  .contact-part {
+    text-align: center;
+    margin: 10px 10px;
+    padding: 10px 10px;
+  }
+  .email-subscribe {
+    margin-bottom: 10px;
+  }
+}
+
+/* From Uiverse.io by vinodjangid07 */
+.input-wrapper.new {
+  width: fit-content;
+  height: 45px;
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  background-color: #0f202b;
+}
+
+.icon.new {
+  width: 30px;
+  fill: rgb(255, 255, 255);
+  margin-left: 8px;
+  transition: all 0.3s;
+}
+.input.new {
+  max-width: 170px;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  background-color: #0f202b;
+  color: white;
+  font-size: 1em;
+}
+.input.new:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #292524 inset;
+  -webkit-text-fill-color: #ffffff;
+}
+.Subscribe-btn.new {
+  height: 100%;
+  width: 95px;
+  border: none;
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  background-color: #ffffff;
+  font-weight: 500;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s;
+}
+.arrow {
+  /* display: none; */
+  position: absolute;
+  margin-right: 150px;
+  transition: all 0.3s;
+}
+.input-wrapper.new:active .icon {
+  transform: scale(1.3);
+}
+.Subscribe-btn.new:hover {
+  color: #000;
+}
+.Subscribe-btn.new:hover .arrow {
+  margin-right: 0;
+  animation: jello-vertical 0.9s both;
+  transform-origin: right;
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.Subscribe-btn.new:active {
+  transform: scale(0.9);
+}

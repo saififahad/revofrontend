@@ -1,0 +1,9 @@
+.wheel {
+  width: 120px;
+}
+
+@media (max-width: 600px) {
+  .wheel {
+    width: 80px;
+  }
+}

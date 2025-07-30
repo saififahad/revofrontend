@@ -1,0 +1,59 @@
+/* Add this CSS to your stylesheet */
+.dropdown-menu {
+  display: none; /* Hide the dropdown by default */
+  position: absolute;
+  right: 0; /* Align to the right */
+  top: 100%; /* Position it below the button */
+  z-index: 1000;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #fff;
+  text-align: left;
+  list-style: none;
+  background-color: #343a40;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+.side_logo {
+  height: 24px;
+}
+/* Show the dropdown when it has the 'show' class */
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Additional styling for the dropdown items */
+.dropdown-menu li a {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #495057;
+}
+
+/* Styling for the divider */
+.dropdown-menu .divider {
+  height: 1px;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Add styling for the close button */
+.close-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: auto;
+}

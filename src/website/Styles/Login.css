@@ -1,0 +1,236 @@
+.login-Container {
+  padding: 50px 80px;
+  display: flex;
+  justify-content: center;
+}
+.child-part {
+  width: 70%;
+  border: 1px solid rgba(109, 109, 109, 1);
+  border-radius: 12px;
+  padding: 12px 12px;
+  background: url("../../assets/website/Img/Login/login.png");
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  animation: pop 0.6s ease-in-out;
+}
+.cross-part {
+  padding: 12px 12px;
+  display: flex;
+  justify-content: right;
+}
+.cross-part img {
+  cursor: pointer;
+  height: 40px;
+}
+.content-container {
+  margin-top: 30px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 30px;
+}
+.login-part {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 12px;
+}
+.login-part h3 {
+  padding: 8px 12px;
+  font-size: 1.8rem;
+  background: linear-gradient(89.2deg, #8fd6ff 0%, #8a80fa 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.login-part h1 {
+  padding: 8px 12px;
+  font-size: 3rem;
+  margin-top: 2px;
+}
+.login-form {
+  margin-top: 20px;
+  padding: 10px 30px;
+  width: 80%;
+}
+.form-group {
+  padding: 10px 20px;
+}
+.form-control {
+  padding: 18px 15px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-radius: 8px;
+  color: #4294ce !important;
+  outline: none;
+  width: 100%;
+}
+.form-control::placeholder {
+  color: #fff;
+  font-size: 1rem;
+}
+.form-options {
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.remember-me {
+  margin-inline-start: 25px;
+}
+.remember-me [Field="checkbox"] {
+  background: rgba(255, 255, 255, 0.15);
+}
+.remember-me label {
+  margin-inline-start: 12px;
+  font-size: 1.2rem;
+}
+.forgot-password {
+  margin-inline-end: 25px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.login-btns {
+  display: flex;
+  justify-content: center;
+}
+.login-button {
+  margin-top: 50px;
+  padding: 17px 45px;
+  border-radius: 40px;
+  background: linear-gradient(180deg, #f9537f 0%, #d644a5 100%);
+  /* background: #4294ce; */
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+.register-now {
+  margin-inline-start: 20px;
+}
+.register-now a {
+  color: white;
+  text-decoration: none;
+  margin-inline-start: 4px;
+}
+
+@media (max-width: 1500px) {
+  .content-container {
+    margin-top: 0;
+  }
+  .child-part {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .content-container {
+    margin-top: 0;
+    padding: 10px;
+  }
+  .child-part {
+    width: 100%;
+  }
+
+  .login-part {
+    width: 100%;
+  }
+  .login-button {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .content-container {
+    margin-top: 0;
+    padding: 5px;
+  }
+  .login-form {
+    width: 90%;
+  }
+  .login-part h3 {
+    font-size: 1.5rem;
+  }
+  .login-part h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .login-Container {
+    padding: 10px 20px;
+  }
+
+  .login-form {
+    margin-top: 0px;
+    padding: 10px 10px;
+    width: 100%;
+  }
+  .login-part h3 {
+    font-size: 1.2rem;
+  }
+  .login-part h1 {
+    font-size: 2rem;
+  }
+  .forgot-password {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 470px) {
+  .login-Container {
+    padding: 5px 5px;
+  }
+  .form-group {
+    padding: 5px 5px;
+  }
+  .login-form {
+    margin-top: 0px;
+    padding: 10px 5px;
+    width: 100%;
+  }
+  .login-part h3 {
+    font-size: 1.2rem;
+  }
+  .login-part h1 {
+    font-size: 1.8rem;
+  }
+  .forgot-password {
+    font-size: 0.8rem;
+  }
+  .cross-part img {
+    height: 30px;
+  }
+  .form-control::placeholder {
+    color: white;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 350px) {
+  .login-Container {
+    padding: 2px 2px;
+  }
+  .form-group {
+    padding: 5px 5px;
+  }
+  .login-form {
+    padding: 0px 0px;
+    width: 100%;
+  }
+  .login-part h3 {
+    font-size: 1rem;
+  }
+  .login-part h1 {
+    font-size: 1.2rem;
+  }
+  .forgot-password {
+    font-size: 0.8rem;
+  }
+  .cross-part img {
+    height: 20px;
+  }
+  .form-control::placeholder {
+    color: white;
+    font-size: 0.9rem;
+  }
+}

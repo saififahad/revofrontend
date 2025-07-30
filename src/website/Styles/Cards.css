@@ -1,0 +1,155 @@
+.cards-container {
+  background: linear-gradient(180deg, #0d171f 0%, #233d4f 34.64%, #101e28 100%);
+  /* background: #; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* border-top: 2px solid #4294ce; */
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.card-one {
+  width: 36%;
+  margin: 20px 15px;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.image img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.cards-content h5 {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 10px 15px;
+}
+.cards-content h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-top: 12px;
+  padding: 10px 15px;
+}
+.cards-content h3 {
+  color: #fff;
+  margin-top: 2px;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+}
+.instructions-container,
+.tips-container {
+  width: 80%;
+}
+@media (max-width: 1400px) {
+  .card-one {
+    width: 40%;
+  }
+
+  .cards-content h1 {
+    font-size: 1.5rem;
+  }
+  .cards-content h3 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 900px) {
+  .card-one {
+    width: 45%;
+    margin: 15px 10px;
+  }
+  .image img {
+    border-radius: 10px;
+  }
+  .cards-content h5 {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+
+  .cards-content h1 {
+    font-size: 1rem;
+    margin-top: 8px;
+    padding: 5px 10px;
+  }
+  .cards-content h3 {
+    margin-top: 2px;
+    padding: 8px 8px;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 650px) {
+  .card-one {
+    width: 70%;
+    margin-top: 10px;
+  }
+  .cards-content h5 {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    padding: 8px 15px;
+  }
+
+  .cards-content h1 {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    padding: 10px 15px;
+  }
+  .cards-content h3 {
+    margin-top: 2px;
+    padding: 5px 15px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 550px) {
+  .card-one {
+    width: 70%;
+    margin-top: 5px;
+  }
+  .cards-content h5 {
+    margin-top: 2px;
+    font-size: 0.8rem;
+    padding: 5px 15px;
+  }
+
+  .cards-content h1 {
+    font-size: 1.2rem;
+    margin-top: 2px;
+    padding: 10px 15px;
+  }
+  .cards-content h3 {
+    margin-top: 2px;
+    padding: 5px 15px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 420px) {
+  .instructions-container,
+  .tips-container {
+    width: 90%;
+  }
+  .card-one {
+    width: 90%;
+    margin-top: 5px;
+  }
+  .cards-content h5 {
+    margin-top: 2px;
+    font-size: 0.9rem;
+    padding: 5px 15px;
+  }
+
+  .cards-content h1 {
+    font-size: 1.3rem;
+    margin-top: 2px;
+    padding: 10px 15px;
+  }
+  .cards-content h3 {
+    margin-top: 2px;
+    padding: 5px 15px;
+    font-size: 1rem;
+  }
+}

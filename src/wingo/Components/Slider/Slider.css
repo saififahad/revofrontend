@@ -1,0 +1,20 @@
+.custom-carousel .carousel-indicators,
+.custom-carousel .carousel-control-prev,
+.custom-carousel .carousel-control-next {
+    display: none;
+}
+
+.carousel-indicators {
+  
+    display: none;
+}
+.carousel-control-next {
+    display: none;
+}
+.carousel-control-prev {
+    display: none;
+}
+.carousel-inner{
+    padding: 8px 11px;
+    border-radius: 5px;
+}

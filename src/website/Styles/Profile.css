@@ -1,0 +1,256 @@
+.profile-container {
+  background-color: var(--nav-color);
+}
+
+.profile-part {
+  padding: 10px 140px;
+  height: 67.2vh;
+  position: relative;
+}
+.copy-popup {
+  position: absolute;
+  top: 20%;
+  right: 3%;
+  display: flex;
+  align-items: center;
+  padding: 0px 12px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px var(--btn-color);
+  animation: copied 1s ease-in-out;
+  display: none;
+}
+@keyframes copied {
+  from {
+    transform: translate(300%);
+  }
+  to {
+    transform: translateX(2%);
+  }
+}
+
+.copy-popup h1 {
+  font-size: 1rem;
+}
+.copy-popup span {
+  font-size: 2rem;
+  margin-inline-start: 12px;
+  margin-bottom: 9px;
+  color: rgb(50, 209, 50);
+}
+.show {
+  display: flex;
+}
+
+.profile-heading {
+  border-bottom: 1px solid #fff;
+}
+
+.profile-heading h1 {
+  background: linear-gradient(89.2deg, var(--gradColor) 0%, #8a80fa 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-inline-start: 30px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.head-btn {
+  display: flex;
+  margin: 10px 50px;
+  padding: 10px 10px;
+  animation: pop 1s ease-in-out;
+}
+
+.head-btn h1 {
+  font-size: 1.4rem;
+  color: #4294ce;
+}
+
+.head-btn span {
+  background: linear-gradient(89.2deg, var(--gradColor) 0%, #8a80fa 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.profile-btn {
+  margin-inline-start: 100px;
+  padding: 0px 30px;
+  font-size: 1.2rem;
+  border: 1px solid white;
+  outline: none;
+  background: transparent;
+  color: white;
+  border-radius: 10px;
+}
+.hidden {
+  display: none;
+}
+
+.update-btn {
+  margin-inline-start: 100px;
+  padding: 0px 30px;
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  background: var(--btn-color);
+  color: white;
+  border-radius: 10px;
+  display: none;
+}
+.visible {
+  display: block;
+}
+
+.profile-form {
+  padding: 10px 20px;
+  width: 100%;
+  animation: pop 1s ease-in-out;
+}
+
+.upper-part {
+  display: flex;
+}
+
+.field-part {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 30px;
+  width: 25%;
+}
+
+.field-part label {
+  font-size: 1rem;
+  margin-inline-start: 5px;
+  color: rgba(255, 255, 255, 0.6);
+  /* color: ; */
+}
+
+.input-field {
+  width: 100%;
+  padding: 9px 10px;
+  font-size: 1rem;
+  color: white;
+  border: 1px solid rgba(109, 109, 109, 1);
+  border-radius: 4px;
+  background: transparent;
+}
+
+.input-field:disabled {
+  background-color: #333;
+  color: rgba(255, 255, 255, 0.6);
+}
+.input-field-refer {
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid rgba(109, 109, 109, 1);
+  border-radius: 4px;
+  background-color: #333;
+}
+.refer-input {
+  background: transparent;
+  width: 94%;
+  padding: 9px 10px;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+.copy-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+@media (max-width: 1610px) {
+  .refer-input {
+    background: transparent;
+    width: 90%;
+    padding: 9px 10px;
+    border: none;
+  }
+}
+@media (max-width: 480px) {
+  .refer-input {
+    background: transparent;
+    width: 85%;
+    padding: 9px 10px;
+    border: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .head-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .field-part {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .head-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .profile-part {
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 700px) {
+  .upper-part {
+    width: 100%;
+  }
+  .profile-form {
+    padding: 5px 5px;
+  }
+  .field-part {
+    margin: 20px 10px;
+  }
+  .head-btn h1 {
+    font-size: 1.1rem;
+  }
+
+  .profile-btn {
+    padding: 0px 20px;
+    font-size: 1rem;
+    margin-inline-start: 50px;
+  }
+  .update-btn {
+    margin-inline-start: 50px;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 450px) {
+  .upper-part {
+    width: 80%;
+    flex-direction: column;
+    margin: 10px 10px;
+    align-items: center;
+  }
+  .profile-part {
+    height: 100%;
+  }
+  .head-btn {
+    display: flex;
+    justify-content: space-between;
+  }
+  .profile-btn {
+    padding: 0px 10px;
+    font-size: 1rem;
+    margin-inline-start: 10px;
+  }
+  .update-btn {
+    margin-inline-start: 10px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 350px) {
+  .upper-part {
+    width: 95%;
+    flex-direction: column;
+    margin: 10px 10px;
+    align-items: center;
+  }
+  .head-btn h1 {
+    font-size: 1rem;
+  }
+  .update-btn {
+    font-size: 1rem;
+  }
+}

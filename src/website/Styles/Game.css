@@ -1,0 +1,198 @@
+.game-container {
+  background: var(--nav-color);
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.game-child {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../../assets/website/Img/Game/outofgas.png");
+  width: 80%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game-heading {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+  padding: 0px 12px;
+}
+
+.game-heading h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-inline-start: 30px;
+  color: red;
+}
+
+.card-game-parent {
+  padding: 30px 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: pop 1s ease-in-out;
+}
+@keyframes pop {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.card-game {
+  margin: 30px;
+  cursor: pointer;
+  width: 40%;
+  padding: 20px 20px;
+  background: var(--nav-color);
+  transition: 0.5s;
+  position: relative;
+  border-radius: 10px;
+  transition: 0.9s ease-in-out;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.card-game:hover,
+.card-game:hover .card-game p {
+  border: 1px solid white;
+}
+
+.card-game h1 {
+  color: red;
+  font-weight: 700;
+}
+.card-game p {
+  font-family: var(--body-font);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: normal;
+  margin: 0;
+  color: white;
+}
+.card-game:hover p {
+  color: white;
+}
+.image-play {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-play img {
+  width: 100%;
+}
+.card-game:hover img {
+  opacity: 0.4;
+}
+
+.game-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 40px;
+  border-radius: 30px;
+  background: var(--btn-color);
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+
+.card-game:hover .game-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.card-game:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1500px) {
+  .game-child {
+    width: 100%;
+  }
+
+  .card-game {
+    width: 45%;
+  }
+}
+@media (max-width: 1300px) {
+  .game-child {
+    width: 100%;
+  }
+
+  .card-game-parent {
+    padding: 20px 10px;
+  }
+  .card-game {
+    margin: 10px;
+    width: 40%;
+  }
+}
+@media (max-width: 1100px) {
+  .card-game-parent {
+    padding: 20px 5px;
+  }
+  .card-game {
+    margin: 8px;
+    width: 40%;
+  }
+}
+@media (max-width: 900px) {
+  .game-heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-game-parent {
+    padding: 20px 5px;
+  }
+  .card-game {
+    margin: 15px;
+    width: 70%;
+  }
+}
+@media (max-width: 650px) {
+  .card-game-parent {
+    padding: 20px 5px;
+  }
+  .card-game {
+    margin: 18px;
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .card-game-parent {
+    padding: 20px 8px;
+  }
+  .card-game {
+    margin: 18px;
+    width: 90%;
+  }
+}
+@media (max-width: 350px) {
+  .card-game p {
+    font-size: 12px;
+  }
+
+  .card-game-parent {
+    padding: 15px 2px;
+  }
+  .card-game {
+    margin: 18px;
+    width: 97%;
+  }
+  .game-heading h1 {
+    font-size: 1.5rem;
+  }
+}

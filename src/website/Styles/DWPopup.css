@@ -1,0 +1,245 @@
+body.no-scroll {
+  overflow: hidden;
+}
+
+.popup-parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  transition: opacity 5s ease-in-out;
+  opacity: 1;
+}
+
+.popup-container {
+  padding: 50px;
+  width: 40%;
+  border-radius: 10px;
+  background-color: #0f202b;
+  position: relative;
+  transition: transform 2s ease-in-out, opacity 3s ease-in-out;
+  transform: translateY(0);
+  opacity: 1;
+  animation: pop 0.6s ease-in-out forwards;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.popup-heading {
+  display: flex;
+  align-items: center;
+}
+
+.popup-heading h2 {
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.popup-heading icon {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.price-part {
+  margin-inline-start: 15px;
+}
+
+.price-part h1 {
+  /* color: rgba(173, 173, 173, 1); */
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.popup-child-part {
+  padding: 10px 10px;
+}
+
+.input-field-popup {
+  /* border: 1px solid rgb(124, 121, 121); */
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 8px 3px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.field-part-popup {
+  padding: 12px 12px;
+  width: 80%;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.clear-btn {
+  padding: 5px 15px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.65rem;
+  color: honeydew;
+  /* color: #fff; */
+}
+
+.cur-span {
+  font-size: 1.3rem;
+  /* color: rgba(173, 173, 173, 1); */
+  color: #fff;
+}
+
+.Amount-det {
+  margin-top: 100px;
+  padding: 20px 20px;
+}
+
+.total-Quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+}
+
+.total-Quantity h1 {
+  font-size: 1.2rem;
+  /* color: rgba(173, 173, 173, 1); */
+  color: #fff;
+}
+
+.total-Quantity h3 {
+  font-size: 1.5rem;
+  /* color: rgb(243, 222, 222); */
+  color: #fff;
+}
+
+.DW-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.DW-btn {
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--btn-color);
+  /* background-color: #fff; */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* .DW-btn:hover {
+  background-color: #963676;
+} */
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-100px); /* Start position for animation */
+}
+
+@media (max-width: 1200px) {
+  .popup-container {
+    width: 70%;
+  }
+}
+@media (max-width: 850px) {
+  .popup-container {
+    width: 75%;
+  }
+  .popup-heading h2 {
+    font-size: 1.3rem;
+  }
+
+  .popup-heading icon {
+    font-size: 1.5rem;
+  }
+
+  .price-part h1 {
+    font-size: 1.1rem;
+  }
+  .field-part-popup {
+    width: 85%;
+    font-size: 1.1rem;
+  }
+
+  .clear-btn {
+    font-size: 1.2rem;
+  }
+
+  .cur-span {
+    font-size: 1rem;
+  }
+  .total-Quantity h1 {
+    font-size: 1rem;
+  }
+
+  .total-Quantity h3 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 650px) {
+  .DW-btn {
+    padding: 15px;
+    font-size: 14px;
+  }
+  .popup-container {
+    padding: 10px;
+  }
+}
+@media (max-width: 550px) {
+  .DW-btn {
+    padding: 15px;
+    font-size: 14px;
+  }
+  .popup-container {
+    padding: 5px;
+    width: 95%;
+  }
+}
+@media (max-width: 440px) {
+  .popup-heading h2 {
+    font-size: 1rem;
+  }
+
+  .popup-heading icon {
+    font-size: 1.2rem;
+  }
+  .DW-btn {
+    padding: 15px;
+    font-size: 10px;
+  }
+  .popup-container {
+    padding: 5px;
+    width: 85%;
+  }
+  .popup-child-part {
+    padding: 5px 3px;
+  }
+  .Amount-det {
+    padding: 8px;
+  }
+  .total-Quantity h3 {
+    font-size: 0.7rem;
+  }
+  .total-Quantity h1 {
+    font-size: 0.7rem;
+  }
+}

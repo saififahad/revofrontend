@@ -1,0 +1,245 @@
+  .forgot-Container {
+  padding: 50px 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.forgot-part {
+  width: 70%;
+  margin-top: auto;
+  border: 1px solid rgba(109, 109, 109, 1);
+  border-radius: 12px;
+  padding: 12px 12px;
+  background: url("../../assets/website/Img/Login/login.png");
+  background-size: cover;
+    animation: pop 0.6s ease-in-out;
+
+}
+
+.forgot-cross-part {
+  padding: 12px 12px;
+  display: flex;
+  justify-content: right;
+}
+
+.forgot-cross-part img {
+  cursor: pointer;
+  height: 30px;
+}
+
+.forgot-content-container {
+  margin-top: 70px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 30px;
+}
+
+.forgot-heading {
+  margin-inline-start: 30px;
+}
+
+.forgot-heading h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.forgot-heading h4 {
+  margin-top: 15px;
+  font-family: Poppins;
+  color: rgba(173, 173, 173, 1);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+}
+
+.forgot-form {
+  padding: 10px 30px;
+  width: 50rem;
+}
+
+.forgot-form-group {
+  padding: 10px 20px;
+}
+
+.form-control {
+  padding: 18px 15px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: white;
+  outline: none;
+}
+
+.forgot-btn {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.forgot-button {
+  padding: 17px 45px;
+  border-radius: 40px;
+  background: linear-gradient(180deg, #f9537f 0%, #d644a5 100%);
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1500px) {
+  .forgot-heading {
+    margin-inline-start: 110px;
+  }
+  .forgot-heading h1 {
+    font-size: 2.1rem;
+  }
+  .forgot-heading h4 {
+    font-size: 18px;
+  }
+  .forgot-form {
+    padding: 10px 30px;
+    width: 40rem;
+  }
+}
+
+@media (max-width: 1350px) {
+  .forgot-heading {
+    margin-inline-start: 0;
+  }
+  .forgot-heading h1 {
+    font-size: 2rem;
+  }
+  .forgot-heading h4 {
+    font-size:1rem;
+  }
+  .forgot-form {
+    padding: 10px 30px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .forgot-heading {
+    margin-inline-start: 30px;
+  }
+  .forgot-part {
+    width: 90%;
+  }
+  .forgot-form {
+    padding: 10px 10px;
+  }
+   .forgot-content-container {
+  margin-top: 10px;
+ 
+}
+
+}
+
+ @media (max-width: 850px) {
+  .forgot-content-container {
+  margin-top: 5px;
+  padding: 10px;
+ 
+}
+
+  .forgot-heading {
+    margin-inline-start: 30px;
+  }
+  .forgot-part {
+    width: 100%;
+  }
+  .forgot-form {
+    padding: 10px 10px;
+  }
+  
+}
+ @media (max-width: 700px) {
+  .forgot-content-container {
+  margin-top: 5px;
+  padding: 10px;
+ 
+}
+  .forgot-Container {
+  padding: 10px 10px;
+}
+
+  .forgot-heading {
+    margin-inline-start: 30px;
+  }
+  
+  .forgot-form {
+    padding: 10px 10px;
+  }
+  
+}
+ @media (max-width: 500px) {
+  .forgot-content-container {
+  margin-top: 5px;
+  padding: 3px;
+ 
+}
+  .forgot-Container {
+  padding: 10px 10px;
+}
+
+  .forgot-heading {
+    margin-inline-start: 30px;
+  }
+  
+  .forgot-form {
+    padding: 10px 10px;
+  }
+ .forgot-form-group {
+  padding: 5px 5px;
+}
+.forgot-heading h1 {
+  font-size: 1.8rem;
+}
+
+.forgot-heading h4 {
+  margin-top: 8px;
+}
+  
+}
+ @media (max-width: 400px) {
+  .forgot-content-container {
+  margin-top: 5px;
+  padding: 3px;
+ 
+}
+  .forgot-Container {
+  padding: 2px 3px;
+}
+.forgot-part{
+  padding: 5px 5px ;
+}
+
+  
+  
+  .forgot-form {
+    padding: 2px 2px;
+  }
+ .forgot-form-group {
+  padding: 5px 2px;
+}
+.forgot-heading h1 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.forgot-heading h4 {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 0.7rem;
+}
+  
+}
+

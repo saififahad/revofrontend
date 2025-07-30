@@ -1,0 +1,47 @@
+{
+  "name": "onbid",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env VITE_DEV=true vite",
+    "prod": "cross-env VITE_DEV=false vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "bootstrap": "^5.3.3",
+    "cross-env": "^7.0.3",
+    "formik": "^2.4.6",
+    "jquery": "^3.7.1",
+    "lottie-react": "^2.4.0",
+    "phaser": "^3.80.1",
+    "react": "^18.2.0",
+    "react-audio-player": "^0.17.0",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.2.1",
+    "react-loading-skeleton": "^3.5.0",
+    "react-modal": "^3.16.1",
+    "react-router-dom": "^6.23.1",
+    "react-toastify": "^10.0.5",
+    "socket.io-client": "^4.7.5",
+    "sweetalert2": "^11.0.17",
+    "swr": "^2.2.5",
+    "web3": "^4.9.0",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "sass": "^1.77.2",
+    "vite": "^5.2.0"
+  }
+}

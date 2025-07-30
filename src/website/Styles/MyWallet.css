@@ -1,0 +1,151 @@
+/* Container styles */
+.table-parent{
+  overflow-x: auto;
+  width: 100%;
+  margin: 20px 20px;
+  
+}
+
+
+/* Pagination button styles */
+.pagination-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  align-items: center;
+}
+
+.page-btn {
+  padding: 12px 32px;
+  margin: 12px;
+  background-color: var(--btn-color);
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Table styles */
+.transactions-table {
+  color: #fff;
+}
+
+.table-head-transaction {
+  background: var(--btn-color);
+  border: 2px solid rgb(0, 0, 0);
+  padding: 20px 20px;
+  width: 100% ;
+}
+.transaction-head-items th{
+text-align: center !important;
+padding: 20px !important;
+}
+
+/* .data-table-item{
+ border: 2px solid red;
+ display: flex;
+ justify-content: center;
+ flex-direction: row;
+} */
+
+.credit {
+  color: green;
+}
+
+.withdraw {
+  color: red;
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 20px;
+  text-align: left;
+  font-size: 1rem;
+  background-color: #162631;
+}
+
+.date-box {
+ width: 80%;
+}
+
+.table-date-part {
+  width: 100%;
+}
+
+.transactions-table th {
+  background-color: var(--btn-color);
+  color: #ffffff;
+  padding: 12px;
+}
+
+.transactions-table tbody tr:hover {
+  background-color: #152530;
+}
+
+/* Truncate long addresses */
+/* .truncated-address {
+  max-width:120px; /* Adjust as needed */
+/* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  position: relative; */
+/* } */
+
+/* Tooltip */
+/* .truncated-address:hover::after {
+  content: attr(data-full-address);
+  position: absolute;
+  white-space: normal;
+  background-color:gray;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  top: 50%;
+  left: 0;
+  z-index: 999;
+  width: 300px; /* Adjust as needed */
+/* overflow-x: auto; */
+/* } */
+
+/* Responsive adjustments */
+
+@media (max-width: 1650px) {
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+@media (max-width: 900px) {
+  .table-container {
+    width: 95%;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .transactions-table th,
+  .transactions-table td {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .transactions-table {
+    overflow: hidden;
+  }
+  
+
+  .table-container {
+    width: 90%;
+  }
+  .page-btn {
+    padding: 12px 12px;
+    margin: 8px;
+    font-size: 1rem;
+  }
+}

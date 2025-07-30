@@ -1,0 +1,99 @@
+.max-wrapper {
+  background-color: #0f202b;
+  min-height: 100vh;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.common-heading {
+  margin: 0;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 40px;
+}
+
+.common-para {
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
+.common-list {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.common-para.w {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.common-list-heading {
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.common-list-info {
+  font-size: 17px;
+  margin-top: 10px;
+  font-weight: normal;
+  list-style: disc;
+}
+.common-list-info span {
+  font-weight: 600;
+}
+
+.common-para.l {
+  margin-top: 10px;
+}
+
+.bold {
+  font-weight: 600;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .wrap {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1050px) {
+  .wrap {
+    max-width: 800px;
+  }
+}
+@media (max-width: 820px) {
+  .wrap {
+    max-width: 600px;
+  }
+}
+@media (max-width: 630px) {
+  .wrap {
+    max-width: 500px;
+  }
+}
+@media (max-width: 560px) {
+  .wrap {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+  .common-heading {
+    font-size: 26px;
+  }
+  .common-list-heading {
+    font-size: 22px;
+  }
+  .common-list-info {
+    font-size: 15px;
+  }
+  .common-para {
+    font-size: 15px;
+  }
+  .common-para.w {
+    width: unset;
+  }
+}
