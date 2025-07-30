@@ -66,7 +66,7 @@ const Register = ({ onClose, showLogin = false, handleLoginClick = null }) => {
     const data = {
       // otp: values.otp,
       pwd: values.password,
-      invitecode: code,
+      invitecode: values.referral,
       email: values.email,
       phone: values.number,
       name: values.Name,
