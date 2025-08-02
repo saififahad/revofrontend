@@ -25,6 +25,9 @@ const validationSchema = Yup.object().shape({
   password: Yup.string()
     .min(6, "Password must be at least 6 characters long")
     .required("Password is required"),
+  confirmPassword: Yup.string()
+    .oneOf([Yup.ref("password"), null], "Passwords must match")
+    .required("Confirm Password is required"),
   // otp: Yup.string().required("OTP is required"),
   referral: Yup.string(), // Optional field, no validation
   acceptRisk: Yup.boolean().oneOf(
@@ -72,7 +75,7 @@ const Register = ({ onClose, showLogin = false, handleLoginClick = null }) => {
       name: values.Name,
       acceptRisk: values.acceptRisk,
     };
-    // console.log(data);
+
     const res = await postData("/auth/register", data);
     if (res.status || res.success) {
       setSubmitting(false);
@@ -109,6 +112,7 @@ const Register = ({ onClose, showLogin = false, handleLoginClick = null }) => {
         email: "",
         number: "",
         password: "",
+        confirmPassword: "",
         referral: code,
         acceptRisk: false,
       }}
@@ -189,6 +193,20 @@ const Register = ({ onClose, showLogin = false, handleLoginClick = null }) => {
                       className="error-message"
                     />
                   </div>
+                  <div className="register-form-group">
+                    <Field
+                      type="password"
+                      name="confirmPassword"
+                      placeholder="Confirm Password"
+                      className="register-form-control"
+                    />
+                    <ErrorMessage
+                      name="confirmPassword"
+                      component="div"
+                      className="error-message"
+                    />
+                  </div>
+
                   {/* <div className="register-form-group otp-group">
                     <Field
                       type="text"
@@ -214,7 +232,7 @@ const Register = ({ onClose, showLogin = false, handleLoginClick = null }) => {
                       // className="register-form-control"
                       type="text"
                       name="referral"
-                      placeholder="Enter Referral Code"
+                      placeholder="Enter Referral Code (Optional)"
                       className="register-form-control"
                     />
                   </div>
